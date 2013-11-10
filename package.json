@@ -1,0 +1,24 @@
+{
+  "name": "templates-coffeecup",
+  "version": "0.1.0",
+  "description": "A CoffeCup templates prepackager",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "coffee -c -s < src/templates.coffee > index.js",
+    "test": "vows test/*.coffee* --spec"
+  },
+  "keywords": [
+    "CoffeeCup",
+    "templates"
+  ],
+  "author": "Stéphane Alnet <stephane@shimaore.net>",
+  "license": "Public Domain",
+  "devDependencies": {
+    "coffee-script": "~1.6.3",
+    "should": "~2.0.2",
+    "vows": "~0.7.0"
+  },
+  "dependencies": {
+    "coffeecup": "~0.3.21"
+  }
+}
