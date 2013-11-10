@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": "A CoffeCup templates prepackager",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shimaore/templates-coffeecup.git"
+  },
   "scripts": {
     "prepublish": "coffee -c -s < src/templates.coffee > index.js",
     "test": "vows test/*.coffee* --spec"
